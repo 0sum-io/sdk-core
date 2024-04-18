@@ -115,13 +115,13 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
 
 // Avalanche v3 addresses
 const AVALANCHE_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
-  multicallAddress: '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
-  quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
-  v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
-  nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
-  tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
-  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
+  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS || '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
+  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS || '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
+  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS || '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
+  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS || '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
+  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS || '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
+  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS || '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
+  swapRouter02Address: process.env.REACT_APP_SWAP_ROUTER_02_ADDRESS || '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
 }
 
 const BASE_ADDRESSES: ChainAddresses = {
