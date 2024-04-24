@@ -74,12 +74,12 @@ const CELO_ADDRESSES: ChainAddresses = {
 
 // celo v3 addresses
 const ROLLUP_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS as string,
-  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS as string,
-  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS as string,
-  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS,
-  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS as string,
-  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS as string
+  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS! as string,
+  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS! as string,
+  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS! as string,
+  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS! as string,
+  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS! as string,
+  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS! as string
 }
 
 // BNB v3 addresses
