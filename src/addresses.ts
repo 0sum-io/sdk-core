@@ -72,6 +72,16 @@ const CELO_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D'
 }
 
+// celo v3 addresses
+const ROLLUP_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS as string,
+  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS as string,
+  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS as string,
+  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS,
+  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS as string,
+  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS as string
+}
+
 // BNB v3 addresses
 const BNB_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7',
@@ -146,6 +156,7 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
+  [ChainId.ROLLUP]: ROLLUP_ADDRESSES,
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
   [ChainId.ARBITRUM_ONE]: ARBITRUM_ONE_ADDRESSES,

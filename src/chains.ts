@@ -1,4 +1,5 @@
 export enum ChainId {
+  ROLLUP = Number(process.env.REACT_APP_CHAIN_ID),
   MAINNET = 1,
   GOERLI = 5,
   SEPOLIA = 11155111,
@@ -19,6 +20,7 @@ export enum ChainId {
 }
 
 export const SUPPORTED_CHAINS = [
+  ChainId.ROLLUP,
   ChainId.MAINNET,
   ChainId.OPTIMISM,
   ChainId.OPTIMISM_GOERLI,
