@@ -1,5 +1,5 @@
 export enum ChainId {
-  ROLLUP = Number(process.env.REACT_APP_CHAIN_ID!),
+  ROLLUP = Number(process.env.REACT_APP_CHAIN_ID) ?? 123123123,
   MAINNET = 1,
   GOERLI = 5,
   SEPOLIA = 11155111,

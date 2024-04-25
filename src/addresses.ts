@@ -72,14 +72,14 @@ const CELO_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D'
 }
 
-// celo v3 addresses
+// rollup addresses
 const ROLLUP_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS! as string,
-  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS! as string,
-  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS! as string,
-  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS! as string,
-  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS! as string,
-  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS! as string
+  v3CoreFactoryAddress: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS ?? '0x0000000000000000000000000000000000000123',
+  multicallAddress: process.env.REACT_APP_MULTICALL_ADDRESS ?? '0x0000000000000000000000000000000000000123',
+  quoterAddress: process.env.REACT_APP_QUOTER_ADDRESS ?? '0x0000000000000000000000000000000000000123',
+  v3MigratorAddress: process.env.REACT_APP_V3_MIGRATOR_ADDRESS ?? '0x0000000000000000000000000000000000000123',
+  nonfungiblePositionManagerAddress: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS ?? "0x0000000000000000000000000000000000000123",
+  tickLensAddress: process.env.REACT_APP_TICK_LENS_ADDRESS ?? '0x0000000000000000000000000000000000000123'
 }
 
 // BNB v3 addresses
